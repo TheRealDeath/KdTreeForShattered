@@ -1,5 +1,3 @@
-package Binary_Trees;
-
 import java.util.Arrays;
 
 
