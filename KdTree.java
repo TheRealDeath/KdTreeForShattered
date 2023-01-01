@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 
 /**
- * @author Gerardo Vega gv418239@g.risd.org
- * @version 1.5
- * @since 18.0.2
  * <p>
  * An implementation of a K-D Tree for fast Nearest Neighbor Queries
  * In future editons, the tree will contain range search
  * @see <a href="https://en.wikipedia.org/wiki/K-d_tree">K-D Tree (Wikipedia)</a>
  * <br>
+ * @author Gerardo Vega gv418239@g.risd.org
+ * @version 1.5
+ * @since 18.0.2
  */
 public class KdTree {
 
@@ -48,12 +48,12 @@ public class KdTree {
         return new Node(temp);
     }
     /**
-    * @author Gerardo Vega gv418239@g.risd.org
-    * @version 1.5
-    * @since 18.0.2
     * <p>
     * inserts nodes according to a k value comparasion 
     * <br>
+    * @author Gerardo Vega gv418239@g.risd.org
+    * @version 1.5
+    * @since 18.0.2
     */
     public void insert(double[] temp) {
         root = insertRec(root,temp,0);
@@ -66,9 +66,6 @@ public class KdTree {
         return root;
     }
     /**
-    * @author Gerardo Vega gv418239@g.risd.org
-    * @version 1.5
-    * @since 18.0.2
     * <p>
     * An implementation of the Nearest Neighbor algorithm(NN)
     * <p>
@@ -80,6 +77,9 @@ public class KdTree {
     * <p>
     *   If the distance is less than the current best, descend the tree down the opposite path already descended 
     * <br>
+    * @author Gerardo Vega gv418239@g.risd.org
+    * @version 1.5
+    * @since 18.0.2
     */
     public Node nearestNeighbor(double[] points) {
         q = 0;
@@ -124,12 +124,12 @@ public class KdTree {
     }
 
     /**
-    * @author Gerardo Vega gv418239@g.risd.org
-    * @version 1.5
-    * @since 18.0.2
     * <p>
     * prints the tree in an inorder fashion
     * <br>
+    * @author Gerardo Vega gv418239@g.risd.org
+    * @version 1.5
+    * @since 18.0.2
     */
     private static String s;
     @Override
